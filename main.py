@@ -34,7 +34,7 @@ class IdleWatcher:
         self.update_mouse_position()
         window_text = GetWindowText(GetForegroundWindow())
 
-        if re.search(r"PyCharm|VLC|YouTube|Hollow Knight|FetLife|Sonic Robo", window_text):
+        if re.search(r"PyCharm|VLC|YouTube|Hollow Knight|Sonic Robo", window_text):
             self.is_idle = False
         elif self.mouse_position == self.previous_state.mouse_position:
             self.is_idle = True
